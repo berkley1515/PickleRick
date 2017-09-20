@@ -61,6 +61,33 @@ namespace PickleRick.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Goodbye_Moonmen___rick_and_morty {
+            get {
+                return ResourceManager.GetStream("Goodbye_Moonmen___rick_and_morty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Rick_and_Morty {
+            get {
+                return ResourceManager.GetStream("Rick_and_Morty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Rick_and_Morty___Evil_Morty_Theme_Song_Trap_Remix_ {
+            get {
+                return ResourceManager.GetStream("Rick_and_Morty___Evil_Morty_Theme_Song_Trap_Remix_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap sOMAnoq {
@@ -86,6 +113,16 @@ namespace PickleRick.Properties {
         internal static System.Drawing.Bitmap thumb_1920_633262 {
             get {
                 object obj = ResourceManager.GetObject("thumb-1920-633262", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thumb_1920_6332621 {
+            get {
+                object obj = ResourceManager.GetObject("thumb-1920-6332621", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

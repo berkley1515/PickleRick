@@ -52,7 +52,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PickleRick.Properties.Resources.thumb_1920_633262;
+            this.BackgroundImage = global::PickleRick.Properties.Resources.thumb_1920_6332621;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(464, 321);
             this.Controls.Add(this.drawPickleRick);

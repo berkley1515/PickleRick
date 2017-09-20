@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.Threading;
+using System.IO; 
+
 
 namespace PickleRick
 {
@@ -21,9 +23,19 @@ namespace PickleRick
 
         private void drawPickleRick_Click(object sender, EventArgs e)
         {
+            //players
+            System.Windows.Media.MediaPlayer evilPlayer;
+            System.Windows.Media.MediaPlayer moonmanPlayer;
+            System.Windows.Media.MediaPlayer themePlayer;
             //sounds
+            evilPlayer = new System.Windows.Media.MediaPlayer(); //evil morty
+            evilPlayer.Open(new Uri(Application.StartupPath + "/Resources/Rick_and_Morty_-_Evil_Morty_Theme_Song_Trap_Remix_.wav")); //evil morty
+            moonmanPlayer = new System.Windows.Media.MediaPlayer(); //moonman
+            moonmanPlayer.Open(new Uri(Application.StartupPath + "/Resources/Goodbye_Moonmen_-_rick_and_morty.wav")); //moonman
+            themePlayer = new System.Windows.Media.MediaPlayer(); //theme
+            themePlayer.Open(new Uri(Application.StartupPath + "/Resources/Rick_and_Morty.wav")); //theme
 
-
+            drawPickleRick.Visible = false;
 
             //graphics
             Graphics pickleRick = this.CreateGraphics();
