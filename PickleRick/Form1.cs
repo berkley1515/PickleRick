@@ -21,7 +21,7 @@ namespace PickleRick
             InitializeComponent();
         }
 
-        private void drawPickleRick_Click(object sender, EventArgs e)
+        private void drawPickleRick_Click(object sender, EventArgs e) //i made it so when u click starting label it loads this
         {
             //players
             System.Windows.Media.MediaPlayer evilPlayer;
@@ -35,10 +35,10 @@ namespace PickleRick
             themePlayer = new System.Windows.Media.MediaPlayer(); //theme
             themePlayer.Open(new Uri(Application.StartupPath + "/Resources/Rick_and_Morty.wav")); //theme
 
-            drawPickleRick.Visible = false;
+            musicPlayer.Visible = false;
 
             //graphics
-            Graphics pickleRick = this.CreateGraphics();
+            Graphics graphics = this.CreateGraphics();
             Pen drawPen = new Pen(Color.Red, 10);
             SolidBrush drawBrush = new SolidBrush(Color.Yellow);
             Font drawFont = new Font("Impact", 30, FontStyle.Bold);
@@ -47,12 +47,14 @@ namespace PickleRick
             SolidBrush PacmanABrush = new SolidBrush(Color.Yellow);
 
 
-
+            graphics.DrawRectangle
 
 
 
 
 
         }
+
+        
     }
 }
