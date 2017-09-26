@@ -35,19 +35,26 @@ namespace PickleRick
             themePlayer = new System.Windows.Media.MediaPlayer(); //theme
             themePlayer.Open(new Uri(Application.StartupPath + "/Resources/Rick_and_Morty.wav")); //theme
 
+            //hide label
             musicPlayer.Visible = false;
 
             //graphics
             Graphics graphics = this.CreateGraphics();
             Pen drawPen = new Pen(Color.Red, 10);
-            SolidBrush drawBrush = new SolidBrush(Color.Yellow);
-            Font drawFont = new Font("Impact", 30, FontStyle.Bold);
-            SolidBrush drawBrushFont = new SolidBrush(Color.Red);
+            SolidBrush labelBrushA = new SolidBrush(Color.Navy);
+            Font loadingFont = new Font("Impact", 20, FontStyle.Bold);
+            SolidBrush loadingBrush = new SolidBrush(Color.Black);
             Pen PacmanAPen = new Pen(Color.Yellow);
             SolidBrush PacmanABrush = new SolidBrush(Color.Yellow);
 
+            //loadscreen (waste time counting down)
+             graphics.DrawString("Loading", loadingFont, loadingBrush, 200, 140);
 
-            graphics.DrawRectangle
+
+
+            Thread.Sleep(4000);
+             graphics.FillRectangle(labelBrushA, 100, 250, 200, 50);
+
 
 
 
