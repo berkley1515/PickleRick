@@ -37,22 +37,45 @@ namespace PickleRick
 
             //hide label
             musicPlayer.Visible = false;
+            themePlayer.Play();
 
             //graphics
             Graphics graphics = this.CreateGraphics();
             Pen drawPen = new Pen(Color.Red, 10);
             SolidBrush labelBrushA = new SolidBrush(Color.Navy);
-            Font loadingFont = new Font("Impact", 20, FontStyle.Bold);
-            SolidBrush loadingBrush = new SolidBrush(Color.Black);
+            Font loadingFont = new Font("Impact", 40, FontStyle.Bold);
+            SolidBrush loadingBrush = new SolidBrush(Color.DarkGray);
+            Font loadingFontCover = new Font("Impact", 40, FontStyle.Bold);
+            SolidBrush loadingBrushCover = new SolidBrush(Color.Blue);
             Pen PacmanAPen = new Pen(Color.Yellow);
             SolidBrush PacmanABrush = new SolidBrush(Color.Yellow);
 
             //loadscreen (waste time counting down)
-             graphics.DrawString("Loading", loadingFont, loadingBrush, 200, 140);
+            graphics.DrawString("Loading", loadingFont, loadingBrush, 120, 140);
+            Thread.Sleep(1200);
+            graphics.DrawString(".", loadingFont, loadingBrush, 305, 140);
+            Thread.Sleep(1200);
+            graphics.DrawString(".", loadingFont, loadingBrush, 320, 140);
+            Thread.Sleep(1200);
+            graphics.DrawString(".", loadingFont, loadingBrush, 335, 140);
+            Thread.Sleep(1200);
+            //blue
+            graphics.DrawString(".", loadingFontCover, loadingBrushCover, 305, 140);
+            Thread.Sleep(1200);
+            graphics.DrawString(".", loadingFontCover, loadingBrushCover, 320, 140);
+            Thread.Sleep(1200);
+            graphics.DrawString(".", loadingFontCover, loadingBrushCover, 335, 140);
+            Thread.Sleep(1200);
+            //gray
+            graphics.DrawString(".", loadingFont, loadingBrush, 305, 140);
+            Thread.Sleep(1200);
+            graphics.DrawString(".", loadingFont, loadingBrush, 320, 140);
+            Thread.Sleep(1200);
+            graphics.DrawString(".", loadingFont, loadingBrush, 335, 140);
+            Thread.Sleep(1200);
 
 
-
-            Thread.Sleep(4000);
+            Thread.Sleep(18000); //make longer after testing
              graphics.FillRectangle(labelBrushA, 100, 250, 200, 50);
 
 
