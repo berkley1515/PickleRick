@@ -1,4 +1,8 @@
-﻿using System;
+﻿/// Berkley Fair
+/// Sept 27th
+/// Program plays a beeep sound when button pressed, wastes time loading, then plays pickle rick sound , then welcome text. END
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,8 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.Threading;
-using System.IO; 
-
+using System.IO;
 
 namespace PickleRick
 {
@@ -24,20 +27,20 @@ namespace PickleRick
         private void drawPickleRick_Click(object sender, EventArgs e) //i made it so when u click starting label it loads this
         {
             //players
-            System.Windows.Media.MediaPlayer evilPlayer;
-            System.Windows.Media.MediaPlayer moonmanPlayer;
+            System.Windows.Media.MediaPlayer beepPlayer;
             System.Windows.Media.MediaPlayer themePlayer;
+
             //sounds
-            evilPlayer = new System.Windows.Media.MediaPlayer(); //evil morty
-            evilPlayer.Open(new Uri(Application.StartupPath + "/Resources/Rick_and_Morty_-_Evil_Morty_Theme_Song_Trap_Remix_.wav")); //evil morty
-            moonmanPlayer = new System.Windows.Media.MediaPlayer(); //moonman
-            moonmanPlayer.Open(new Uri(Application.StartupPath + "/Resources/Goodbye_Moonmen_-_rick_and_morty.wav")); //moonman
+            beepPlayer = new System.Windows.Media.MediaPlayer(); 
+            beepPlayer.Open(new Uri(Application.StartupPath + "/Resources/beep_02.wav")); 
             themePlayer = new System.Windows.Media.MediaPlayer(); //theme
-            themePlayer.Open(new Uri(Application.StartupPath + "/Resources/Rick_and_Morty.wav")); //theme
+            themePlayer.Open(new Uri(Application.StartupPath + "/Resources/Im_Pickle_Rick.wav")); //theme
 
             //hide label
             musicPlayer.Visible = false;
-            themePlayer.Play();
+            beepPlayer.Play();
+            Thread.Sleep(1000);
+            beepPlayer.Stop();
 
             //graphics
             Graphics graphics = this.CreateGraphics();
@@ -47,8 +50,8 @@ namespace PickleRick
             SolidBrush loadingBrush = new SolidBrush(Color.DarkGray);
             Font loadingFontCover = new Font("Impact", 40, FontStyle.Bold);
             SolidBrush loadingBrushCover = new SolidBrush(Color.Blue);
-            Pen PacmanAPen = new Pen(Color.Yellow);
-            SolidBrush PacmanABrush = new SolidBrush(Color.Yellow);
+            Font welcomeFont = new Font("Comic Sans", 30, FontStyle.Bold);
+            SolidBrush welcomeBrush = new SolidBrush(Color.Red);
 
             //loadscreen (waste time counting down)
             graphics.DrawString("Loading", loadingFont, loadingBrush, 120, 140);
@@ -74,17 +77,15 @@ namespace PickleRick
             graphics.DrawString(".", loadingFont, loadingBrush, 335, 140);
             Thread.Sleep(1200);
 
-
-            Thread.Sleep(18000); //make longer after testing
-             graphics.FillRectangle(labelBrushA, 100, 250, 200, 50);
-
-
-
-
-
-
+            Thread.Sleep(1000); //make longer after testing
+            graphics.FillRectangle(labelBrushA, 110, 140, 270, 70);
+            graphics.DrawString("Welcome!", welcomeFont, welcomeBrush, 140, 150);
+            themePlayer.Play();
         }
 
-        
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //need to not throw errors
+        }
     }
 }

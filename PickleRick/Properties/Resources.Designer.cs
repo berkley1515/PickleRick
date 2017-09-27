@@ -63,57 +63,18 @@ namespace PickleRick.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Goodbye_Moonmen___rick_and_morty {
+        internal static System.IO.UnmanagedMemoryStream beep_02 {
             get {
-                return ResourceManager.GetStream("Goodbye_Moonmen___rick_and_morty", resourceCulture);
+                return ResourceManager.GetStream("beep_02", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Rick_and_Morty {
+        internal static System.IO.UnmanagedMemoryStream Im_Pickle_Rick___2017_09_23_22_25_38_UTC_ {
             get {
-                return ResourceManager.GetStream("Rick_and_Morty", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Rick_and_Morty___Evil_Morty_Theme_Song_Trap_Remix_ {
-            get {
-                return ResourceManager.GetStream("Rick_and_Morty___Evil_Morty_Theme_Song_Trap_Remix_", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap sOMAnoq {
-            get {
-                object obj = ResourceManager.GetObject("sOMAnoq", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap sOMAnoq720 {
-            get {
-                object obj = ResourceManager.GetObject("sOMAnoq720", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap thumb_1920_633262 {
-            get {
-                object obj = ResourceManager.GetObject("thumb-1920-633262", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetStream("Im_Pickle_Rick___2017_09_23_22_25_38_UTC_", resourceCulture);
             }
         }
         
